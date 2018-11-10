@@ -1,0 +1,25 @@
+<mat-accordion>
+
+  <mat-expansion-panel *ngFor="let hour of all" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+   
+    <mat-expansion-panel-header>
+      
+      <mat-panel-title>
+        {{hour.hour}}
+      </mat-panel-title>
+      
+      <mat-panel-description>
+       {{hour.amount}}
+      </mat-panel-description>
+
+    </mat-expansion-panel-header>
+
+
+    <div *ngFor="let item of hour.all">
+      <p>{{item.updated}}</p>
+      <p>{{item.status}}</p>
+    </div>
+
+  </mat-expansion-panel>
+
+</mat-accordion>

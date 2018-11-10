@@ -1,0 +1,13 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened=false>      
+      <div>         
+          <a>My Orders</a>
+      </div>      
+  </mat-drawer>
+  <div>
+    <app-toolbar (toggleEvent)="toggle($event)"></app-toolbar>
+  </div> 
+  <div class="main">
+      <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
