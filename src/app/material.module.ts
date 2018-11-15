@@ -1,59 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-/*import {MatExpansionModule, MatAccordion, 
-  MatExpansionPanel, MatExpansionPanelTitle, MatExpansionPanelDescription, MatExpansionPanelHeader} from '@angular/material/expansion';*/
-
-import { 
-  MatButtonModule,   
-  MatInputModule,
-  MatProgressSpinnerModule,
-  MatCardModule,  
-  MatCheckboxModule,
-  MatGridListModule,
-  MatGridTile,  
-  MatListModule,
-  MatNavList,
-  MatListItem,  
-  MatIconModule,
-  MatIcon,
-  MatToolbarModule,  
-  MatDialogModule, 
-  MatRadioModule,
-  MatSidenavModule } from '@angular/material'
-
-  import {MatTabsModule} from '@angular/material/tabs';
+import {
+  MatSidenavModule
+} from '@angular/material'
 
 @NgModule({
   imports: [
-    MatButtonModule,
-    MatToolbarModule, 
-    MatInputModule, 
-    MatProgressSpinnerModule,
-    MatCardModule,   
-    MatCheckboxModule, 
-    MatGridListModule,
-    MatListModule,
-    MatIconModule,   
-    MatRadioModule, 
-    MatDialogModule,    
-    MatTabsModule,
     MatSidenavModule
-    ],
-  exports: [    
-    MatButtonModule, 
-    MatToolbarModule, 
-    MatInputModule, 
-    MatProgressSpinnerModule,
-    MatCardModule,   
-    MatCheckboxModule, 
-    MatGridListModule,
-    MatListModule,
-    MatIconModule,    
-    MatRadioModule, 
-    MatTabsModule,   
-    MatSidenavModule,
-    ]  
+  ],
+  exports: [
+    MatSidenavModule
+  ]
 })
 
 export class MaterialModule { }

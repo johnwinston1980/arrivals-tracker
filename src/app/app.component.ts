@@ -20,6 +20,5 @@ export class AppComponent {
     else if (event == 'toggle') {
       this.drawer.toggle()
     }
-  }  
-
+  }
 }

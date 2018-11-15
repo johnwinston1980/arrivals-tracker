@@ -5,22 +5,31 @@ import { MainComponent } from '../main/main.component'
 import { HttpClientModule } from '@angular/common/http';
 
 import {
-  MatExpansionModule, 
-  MatAccordion, 
-  MatExpansionPanel, 
-  MatExpansionPanelTitle, 
-  MatExpansionPanelDescription, 
+  MatExpansionModule,
+  MatAccordion,
+  MatExpansionPanel,
+  MatExpansionPanelTitle,
+  MatExpansionPanelDescription,
   MatExpansionPanelHeader
 } from '@angular/material/expansion';
+
+import {
+  MatButtonModule
+} from '@angular/material/button';
 
 @NgModule({
   imports: [
     CommonModule,
     MatExpansionModule,
+    MatButtonModule,
     HttpClientModule
   ],
-  exports: [ MatExpansionModule
+  exports: [
+    MatExpansionModule,
+    MatButtonModule
   ],
-  declarations: [ MainComponent ]
+  declarations: [
+    MainComponent
+  ]
 })
 export class MainModule { }

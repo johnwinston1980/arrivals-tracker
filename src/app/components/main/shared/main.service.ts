@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MainService {
 
-  url = 'https://kind-pig-51.localtunnel.me'
+  url = 'https://shy-fly-48.localtunnel.me'
 
   constructor(private http: HttpClient) {
 
